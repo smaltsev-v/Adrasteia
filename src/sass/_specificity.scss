@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: $primary-background-color;
+  font-family: 'Gilroy';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17;
+  @media screen and (min-width: $desktop) {
+    font-size: 34px;
+    line-height: 1;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  height: auto;
+  display: block;
+  min-width: 100%;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.no-padding {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+    padding: 0 36px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Gilroy;
+  background-color: $primary-background-color;
+}
+
+.hidden-header {
+  display: none;
+}
